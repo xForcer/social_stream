@@ -15,8 +15,8 @@ function applyCustomActions(data){
 		tid = data.tid;
 	}
 	
-	
-	if (data.bot && data.chatmessage.startsWith("!tts"))
+	// if (data.bot && data.chatmessage.startsWith("!tts"))
+	if (data.chatmessage.startsWith("!tts"))
 	{
 		speak(data.chatmessage.split("!tts")[1]);
 	}
